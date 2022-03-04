@@ -1,0 +1,742 @@
+2022-03-04 17:04:43,142 INFO  [main] GatewayApplication: Starting GatewayApplication using Java 1.8.0_261 on DESKTOP-B5LVVSH with PID 2860 (C:\Users\Kamyar\Documents\projects\kadmos\gateway\target\classes started by Kamyar in C:\Users\Kamyar\Documents\projects\kadmos)
+2022-03-04 17:04:43,150 DEBUG [main] GatewayApplication: Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-04 17:04:43,151 INFO  [main] GatewayApplication: No active profile set, falling back to 1 default profile: "default"
+2022-03-04 17:04:44,644 INFO  [main] GenericScope: BeanFactory id=fbb73f9d-a773-38a2-98a4-04313cb3a4ca
+2022-03-04 17:04:44,744 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:04:44,746 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:04:44,747 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:04:46,664 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:04:47,412 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [After]
+2022-03-04 17:04:47,413 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Before]
+2022-03-04 17:04:47,413 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Between]
+2022-03-04 17:04:47,414 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Cookie]
+2022-03-04 17:04:47,415 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Header]
+2022-03-04 17:04:47,415 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Host]
+2022-03-04 17:04:47,416 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Method]
+2022-03-04 17:04:47,416 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Path]
+2022-03-04 17:04:47,417 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Query]
+2022-03-04 17:04:47,418 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [ReadBody]
+2022-03-04 17:04:47,418 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [RemoteAddr]
+2022-03-04 17:04:47,418 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-03-04 17:04:47,419 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Weight]
+2022-03-04 17:04:47,419 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-03-04 17:04:49,228 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:04:50,779 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:04:50,940 INFO  [main] EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 17:04:52,080 INFO  [main] DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2022-03-04 17:04:52,190 WARN  [main] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 17:04:52,309 INFO  [main] InstanceInfoFactory: Setting initial instance status as: STARTING
+2022-03-04 17:04:52,401 INFO  [main] DiscoveryClient: Initializing Eureka in region us-east-1
+2022-03-04 17:04:52,423 INFO  [main] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2022-03-04 17:04:52,462 INFO  [main] DiscoveryClient: Disable delta property : false
+2022-03-04 17:04:52,463 INFO  [main] DiscoveryClient: Single vip registry refresh property : null
+2022-03-04 17:04:52,463 INFO  [main] DiscoveryClient: Force full registry fetch : false
+2022-03-04 17:04:52,463 INFO  [main] DiscoveryClient: Application is null : false
+2022-03-04 17:04:52,463 INFO  [main] DiscoveryClient: Registered Applications size is zero : true
+2022-03-04 17:04:52,464 INFO  [main] DiscoveryClient: Application version is -1: true
+2022-03-04 17:04:52,465 INFO  [main] DiscoveryClient: Getting all instance registry info from the eureka server
+2022-03-04 17:04:57,655 INFO  [main] RedirectingEurekaHttpClient: Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8083/eureka/}, exception=I/O error on GET request for "http://localhost:8083/eureka/apps/": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8083/eureka/apps/": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$6bc78904.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.kadmos.gateway.GatewayApplication.main(GatewayApplication.java:12)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 68 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 81 more
+
+2022-03-04 17:04:57,659 WARN  [main] RetryableEurekaHttpClient: Request execution failed with message: I/O error on GET request for "http://localhost:8083/eureka/apps/": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-03-04 17:04:57,663 INFO  [main] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$6bc78904.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.kadmos.gateway.GatewayApplication.main(GatewayApplication.java:12)
+
+2022-03-04 17:04:57,665 INFO  [main] DiscoveryClient: Initial registry fetch from primary servers failed
+2022-03-04 17:04:57,666 WARN  [main] DiscoveryClient: Using default backup registry implementation which does not do anything.
+2022-03-04 17:04:57,668 INFO  [main] DiscoveryClient: Initial registry fetch from backup servers failed
+2022-03-04 17:04:57,671 INFO  [main] DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2022-03-04 17:04:57,679 INFO  [main] InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-03-04 17:04:57,695 INFO  [main] DiscoveryClient: Discovery Client initialized at timestamp 1646400897691 with initial instances count: 0
+2022-03-04 17:04:57,698 INFO  [main] EurekaServiceRegistry: Registering application GATEWAY with eureka with status UP
+2022-03-04 17:04:57,701 INFO  [main] DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1646400897701, current=UP, previous=STARTING]
+2022-03-04 17:04:57,707 INFO  [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY: registering service...
+2022-03-04 17:04:58,467 INFO  [main] NettyWebServer: Netty started on port 8080
+2022-03-04 17:04:58,469 INFO  [main] EurekaAutoServiceRegistration: Updating port to 8080
+2022-03-04 17:05:00,148 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:05:59,205 INFO  [main] GatewayApplication: Starting GatewayApplication using Java 1.8.0_261 on DESKTOP-B5LVVSH with PID 20304 (C:\Users\Kamyar\Documents\projects\kadmos\gateway\target\classes started by Kamyar in C:\Users\Kamyar\Documents\projects\kadmos)
+2022-03-04 17:05:59,207 DEBUG [main] GatewayApplication: Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-04 17:05:59,208 INFO  [main] GatewayApplication: No active profile set, falling back to 1 default profile: "default"
+2022-03-04 17:06:00,747 INFO  [main] GenericScope: BeanFactory id=fbb73f9d-a773-38a2-98a4-04313cb3a4ca
+2022-03-04 17:06:00,867 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:06:00,869 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:06:00,871 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:06:03,122 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:06:04,602 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [After]
+2022-03-04 17:06:04,603 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Before]
+2022-03-04 17:06:04,604 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Between]
+2022-03-04 17:06:04,604 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Cookie]
+2022-03-04 17:06:04,605 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Header]
+2022-03-04 17:06:04,606 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Host]
+2022-03-04 17:06:04,606 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Method]
+2022-03-04 17:06:04,607 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Path]
+2022-03-04 17:06:04,608 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Query]
+2022-03-04 17:06:04,608 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [ReadBody]
+2022-03-04 17:06:04,608 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [RemoteAddr]
+2022-03-04 17:06:04,608 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-03-04 17:06:04,609 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Weight]
+2022-03-04 17:06:04,609 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-03-04 17:06:06,790 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:06:08,389 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:06:08,636 INFO  [main] EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 17:06:11,029 INFO  [main] DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2022-03-04 17:06:11,235 WARN  [main] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 17:06:11,408 INFO  [main] InstanceInfoFactory: Setting initial instance status as: STARTING
+2022-03-04 17:06:11,537 INFO  [main] DiscoveryClient: Initializing Eureka in region us-east-1
+2022-03-04 17:06:11,552 INFO  [main] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2022-03-04 17:06:11,611 INFO  [main] DiscoveryClient: Disable delta property : false
+2022-03-04 17:06:11,612 INFO  [main] DiscoveryClient: Single vip registry refresh property : null
+2022-03-04 17:06:11,613 INFO  [main] DiscoveryClient: Force full registry fetch : false
+2022-03-04 17:06:11,613 INFO  [main] DiscoveryClient: Application is null : false
+2022-03-04 17:06:11,613 INFO  [main] DiscoveryClient: Registered Applications size is zero : true
+2022-03-04 17:06:11,613 INFO  [main] DiscoveryClient: Application version is -1: true
+2022-03-04 17:06:11,615 INFO  [main] DiscoveryClient: Getting all instance registry info from the eureka server
+2022-03-04 17:06:13,790 INFO  [main] DiscoveryClient: The response status is 200
+2022-03-04 17:06:13,796 INFO  [main] DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2022-03-04 17:06:13,803 INFO  [main] InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-03-04 17:06:13,817 INFO  [main] DiscoveryClient: Discovery Client initialized at timestamp 1646400973814 with initial instances count: 0
+2022-03-04 17:06:13,820 INFO  [main] EurekaServiceRegistry: Registering application GATEWAY with eureka with status UP
+2022-03-04 17:06:13,822 INFO  [main] DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1646400973822, current=UP, previous=STARTING]
+2022-03-04 17:06:13,828 INFO  [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY: registering service...
+2022-03-04 17:06:14,042 INFO  [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY - registration status: 204
+2022-03-04 17:06:14,803 INFO  [main] NettyWebServer: Netty started on port 8080
+2022-03-04 17:06:14,805 INFO  [main] EurekaAutoServiceRegistration: Updating port to 8080
+2022-03-04 17:06:16,779 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:06:19,079 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:06:19,137 INFO  [main] GatewayApplication: Started GatewayApplication in 22.249 seconds (JVM running for 23.982)
+2022-03-04 17:06:20,400 INFO  [registrationTask1] ApplicationRegistrator: Application registered itself as f824864f2336
+2022-03-04 17:06:43,801 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Disable delta property : false
+2022-03-04 17:06:43,803 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Single vip registry refresh property : null
+2022-03-04 17:06:43,803 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Force full registry fetch : false
+2022-03-04 17:06:43,804 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Application is null : false
+2022-03-04 17:06:43,804 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Registered Applications size is zero : true
+2022-03-04 17:06:43,805 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Application version is -1: false
+2022-03-04 17:06:43,805 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Getting all instance registry info from the eureka server
+2022-03-04 17:06:43,830 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: The response status is 200
+2022-03-04 17:12:10,605 INFO  [main] GatewayApplication: Starting GatewayApplication using Java 1.8.0_261 on DESKTOP-B5LVVSH with PID 20892 (C:\Users\Kamyar\Documents\projects\kadmos\gateway\target\classes started by Kamyar in C:\Users\Kamyar\Documents\projects\kadmos)
+2022-03-04 17:12:10,608 DEBUG [main] GatewayApplication: Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-04 17:12:10,609 INFO  [main] GatewayApplication: No active profile set, falling back to 1 default profile: "default"
+2022-03-04 17:12:12,185 INFO  [main] GenericScope: BeanFactory id=63d91bba-a000-3694-b314-1eb49a60297e
+2022-03-04 17:12:12,274 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:12:12,276 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:12:12,278 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:12:14,192 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:12:15,125 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [After]
+2022-03-04 17:12:15,125 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Before]
+2022-03-04 17:12:15,126 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Between]
+2022-03-04 17:12:15,126 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Cookie]
+2022-03-04 17:12:15,126 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Header]
+2022-03-04 17:12:15,126 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Host]
+2022-03-04 17:12:15,126 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Method]
+2022-03-04 17:12:15,127 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Path]
+2022-03-04 17:12:15,127 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Query]
+2022-03-04 17:12:15,127 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [ReadBody]
+2022-03-04 17:12:15,127 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [RemoteAddr]
+2022-03-04 17:12:15,127 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-03-04 17:12:15,128 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Weight]
+2022-03-04 17:12:15,128 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-03-04 17:12:16,837 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:12:18,485 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:12:18,650 INFO  [main] EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 17:12:19,931 INFO  [main] DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2022-03-04 17:12:20,042 WARN  [main] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 17:12:20,138 INFO  [main] InstanceInfoFactory: Setting initial instance status as: STARTING
+2022-03-04 17:12:20,183 INFO  [main] DiscoveryClient: Initializing Eureka in region us-east-1
+2022-03-04 17:12:20,195 INFO  [main] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2022-03-04 17:12:20,222 INFO  [main] DiscoveryClient: Disable delta property : false
+2022-03-04 17:12:20,222 INFO  [main] DiscoveryClient: Single vip registry refresh property : null
+2022-03-04 17:12:20,223 INFO  [main] DiscoveryClient: Force full registry fetch : false
+2022-03-04 17:12:20,223 INFO  [main] DiscoveryClient: Application is null : false
+2022-03-04 17:12:20,223 INFO  [main] DiscoveryClient: Registered Applications size is zero : true
+2022-03-04 17:12:20,224 INFO  [main] DiscoveryClient: Application version is -1: true
+2022-03-04 17:12:20,224 INFO  [main] DiscoveryClient: Getting all instance registry info from the eureka server
+2022-03-04 17:12:21,176 INFO  [main] DiscoveryClient: The response status is 200
+2022-03-04 17:12:21,179 INFO  [main] DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2022-03-04 17:12:21,184 INFO  [main] InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-03-04 17:12:21,191 INFO  [main] DiscoveryClient: Discovery Client initialized at timestamp 1646401341190 with initial instances count: 0
+2022-03-04 17:12:21,193 INFO  [main] EurekaServiceRegistry: Registering application GATEWAY with eureka with status UP
+2022-03-04 17:12:21,194 INFO  [main] DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1646401341193, current=UP, previous=STARTING]
+2022-03-04 17:12:21,197 INFO  [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY: registering service...
+2022-03-04 17:12:21,352 INFO  [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY - registration status: 204
+2022-03-04 17:12:21,707 INFO  [main] NettyWebServer: Netty started on port 8080
+2022-03-04 17:12:21,710 INFO  [main] EurekaAutoServiceRegistration: Updating port to 8080
+2022-03-04 17:12:23,250 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:12:24,714 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:12:24,771 INFO  [main] GatewayApplication: Started GatewayApplication in 16.521 seconds (JVM running for 18.576)
+2022-03-04 17:12:25,241 INFO  [registrationTask1] ApplicationRegistrator: Application registered itself as f824864f2336
+2022-03-04 17:12:51,189 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Disable delta property : false
+2022-03-04 17:12:51,191 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Single vip registry refresh property : null
+2022-03-04 17:12:51,192 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Force full registry fetch : false
+2022-03-04 17:12:51,193 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Application is null : false
+2022-03-04 17:12:51,193 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Registered Applications size is zero : true
+2022-03-04 17:12:51,194 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Application version is -1: false
+2022-03-04 17:12:51,194 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Getting all instance registry info from the eureka server
+2022-03-04 17:12:51,226 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: The response status is 200
+2022-03-04 17:13:55,522 INFO  [DiscoveryClient-CacheRefreshExecutor-0] RedirectingEurekaHttpClient: Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8083/eureka/} exception=I/O error on GET request for "http://localhost:8083/eureka/apps/delta": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8083/eureka/apps/delta": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-03-04 17:13:55,524 INFO  [DiscoveryClient-HeartbeatExecutor-0] RedirectingEurekaHttpClient: Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8083/eureka/} exception=I/O error on PUT request for "http://localhost:8083/eureka/apps/GATEWAY/localhost:GATEWAY": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8083/eureka/apps/GATEWAY/localhost:GATEWAY": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 32 more
+
+2022-03-04 17:13:55,525 WARN  [DiscoveryClient-CacheRefreshExecutor-0] RetryableEurekaHttpClient: Request execution failed with message: I/O error on GET request for "http://localhost:8083/eureka/apps/delta": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-03-04 17:13:55,526 WARN  [DiscoveryClient-HeartbeatExecutor-0] RetryableEurekaHttpClient: Request execution failed with message: I/O error on PUT request for "http://localhost:8083/eureka/apps/GATEWAY/localhost:GATEWAY": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-03-04 17:13:59,666 INFO  [DiscoveryClient-HeartbeatExecutor-0] RedirectingEurekaHttpClient: Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8083/eureka/}, exception=I/O error on PUT request for "http://localhost:8083/eureka/apps/GATEWAY/localhost:GATEWAY": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8083/eureka/apps/GATEWAY/localhost:GATEWAY": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 33 more
+
+2022-03-04 17:13:59,669 WARN  [DiscoveryClient-HeartbeatExecutor-0] RetryableEurekaHttpClient: Request execution failed with message: I/O error on PUT request for "http://localhost:8083/eureka/apps/GATEWAY/localhost:GATEWAY": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-03-04 17:13:59,695 INFO  [DiscoveryClient-CacheRefreshExecutor-0] RedirectingEurekaHttpClient: Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8083/eureka/}, exception=I/O error on GET request for "http://localhost:8083/eureka/apps/delta": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8083/eureka/apps/delta": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+2022-03-04 17:13:59,698 WARN  [DiscoveryClient-CacheRefreshExecutor-0] RetryableEurekaHttpClient: Request execution failed with message: I/O error on GET request for "http://localhost:8083/eureka/apps/delta": Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8083 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-03-04 17:13:59,699 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-03-04 17:13:59,705 ERROR [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-03-04 17:14:29,800 INFO  [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY - Re-registering apps/GATEWAY
+2022-03-04 17:14:29,802 INFO  [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY: registering service...
+2022-03-04 17:14:29,839 INFO  [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY - registration status: 204
+2022-03-04 17:16:35,065 INFO  [main] GatewayApplication: Starting GatewayApplication using Java 1.8.0_261 on DESKTOP-B5LVVSH with PID 13780 (C:\Users\Kamyar\Documents\projects\kadmos\gateway\target\classes started by Kamyar in C:\Users\Kamyar\Documents\projects\kadmos)
+2022-03-04 17:16:35,069 DEBUG [main] GatewayApplication: Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-04 17:16:35,070 INFO  [main] GatewayApplication: No active profile set, falling back to 1 default profile: "default"
+2022-03-04 17:16:37,093 INFO  [main] GenericScope: BeanFactory id=63d91bba-a000-3694-b314-1eb49a60297e
+2022-03-04 17:16:37,200 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:16:37,202 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:16:37,203 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:16:39,684 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:16:40,706 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [After]
+2022-03-04 17:16:40,707 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Before]
+2022-03-04 17:16:40,708 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Between]
+2022-03-04 17:16:40,708 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Cookie]
+2022-03-04 17:16:40,709 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Header]
+2022-03-04 17:16:40,709 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Host]
+2022-03-04 17:16:40,709 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Method]
+2022-03-04 17:16:40,710 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Path]
+2022-03-04 17:16:40,711 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Query]
+2022-03-04 17:16:40,711 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [ReadBody]
+2022-03-04 17:16:40,711 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [RemoteAddr]
+2022-03-04 17:16:40,711 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-03-04 17:16:40,712 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Weight]
+2022-03-04 17:16:40,712 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-03-04 17:16:42,838 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:16:45,104 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:16:45,487 INFO  [main] EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 17:16:47,587 INFO  [main] DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2022-03-04 17:16:47,771 WARN  [main] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 17:16:48,007 INFO  [main] InstanceInfoFactory: Setting initial instance status as: STARTING
+2022-03-04 17:16:48,160 INFO  [main] DiscoveryClient: Initializing Eureka in region us-east-1
+2022-03-04 17:16:48,179 INFO  [main] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2022-03-04 17:16:48,247 INFO  [main] DiscoveryClient: Disable delta property : false
+2022-03-04 17:16:48,248 INFO  [main] DiscoveryClient: Single vip registry refresh property : null
+2022-03-04 17:16:48,249 INFO  [main] DiscoveryClient: Force full registry fetch : false
+2022-03-04 17:16:48,250 INFO  [main] DiscoveryClient: Application is null : false
+2022-03-04 17:16:48,250 INFO  [main] DiscoveryClient: Registered Applications size is zero : true
+2022-03-04 17:16:48,250 INFO  [main] DiscoveryClient: Application version is -1: true
+2022-03-04 17:16:48,251 INFO  [main] DiscoveryClient: Getting all instance registry info from the eureka server
+2022-03-04 17:16:50,360 INFO  [main] DiscoveryClient: The response status is 200
+2022-03-04 17:16:50,378 INFO  [main] DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2022-03-04 17:16:50,385 INFO  [main] InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-03-04 17:16:50,433 INFO  [main] DiscoveryClient: Discovery Client initialized at timestamp 1646401610429 with initial instances count: 0
+2022-03-04 17:16:50,436 INFO  [main] EurekaServiceRegistry: Registering application GATEWAY with eureka with status UP
+2022-03-04 17:16:50,439 INFO  [main] DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1646401610438, current=UP, previous=STARTING]
+2022-03-04 17:16:50,448 INFO  [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY: registering service...
+2022-03-04 17:16:50,808 INFO  [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY - registration status: 204
+2022-03-04 17:16:51,573 INFO  [main] NettyWebServer: Netty started on port 8080
+2022-03-04 17:16:51,577 INFO  [main] EurekaAutoServiceRegistration: Updating port to 8080
+2022-03-04 17:16:53,316 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:16:55,121 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:16:55,164 INFO  [main] GatewayApplication: Started GatewayApplication in 22.517 seconds (JVM running for 24.343)
+2022-03-04 17:16:56,845 INFO  [registrationTask1] ApplicationRegistrator: Application registered itself as f824864f2336
+2022-03-04 17:17:20,389 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Disable delta property : false
+2022-03-04 17:17:20,392 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Single vip registry refresh property : null
+2022-03-04 17:17:20,393 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Force full registry fetch : false
+2022-03-04 17:17:20,395 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Application is null : false
+2022-03-04 17:17:20,396 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Registered Applications size is zero : true
+2022-03-04 17:17:20,397 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Application version is -1: false
+2022-03-04 17:17:20,398 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Getting all instance registry info from the eureka server
+2022-03-04 17:17:20,459 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: The response status is 200
+2022-03-04 17:18:03,623 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> schema:http, path:/auth/login, method:POST, ip:/0:0:0:0:0:0:0:1:61378, host:localhost, contentType:application/x-www-form-urlencoded, content length:31
+2022-03-04 17:18:03,637 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->User-Agent, value->[PostmanRuntime/7.29.0]
+2022-03-04 17:18:03,637 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Accept, value->[*/*]
+2022-03-04 17:18:03,638 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Postman-Token, value->[1b1ebc4c-108b-44b2-b2a7-cc95aba737fa]
+2022-03-04 17:18:03,638 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Host, value->[localhost:8080]
+2022-03-04 17:18:03,639 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Accept-Encoding, value->[gzip, deflate, br]
+2022-03-04 17:18:03,639 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Connection, value->[keep-alive]
+2022-03-04 17:18:03,639 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Content-Type, value->[application/x-www-form-urlencoded]
+2022-03-04 17:18:03,640 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->content-length, value->[31]
+2022-03-04 17:18:03,640 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> body:username=oprsys&password=OprSys
+2022-03-04 17:18:03,642 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> headers: key->transfer-encoding, value->[chunked]
+2022-03-04 17:18:03,643 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> contentType:null, content length:-1, original path:/auth/login, cost:657 ms
+2022-03-04 17:18:07,308 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> body:{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvcHJzeXMiLCJwcml2aWxlZ2VzIjpbIi9zYXZpbmdzL2EvIiwiL3NhdmluZ3MvYi8iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDg0L2F1dGgvbG9naW4iLCJleHAiOjE2NDY0MDM0ODd9.Vk3hXnButctTk4bXGCYKiHygeKOrfIdkCokBrl11itQ","refresh_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvcHJzeXMiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODQvYXV0aC9sb2dpbiIsImV4cCI6MTY0NjQ0NDg4N30.pRtYRz_hVaovUpJD3WTywyv4ZCyB67SnBHYZ50j3xIM"}
+2022-03-04 17:18:14,680 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> schema:http, path:/auth/login, method:POST, ip:/0:0:0:0:0:0:0:1:61378, host:localhost, contentType:application/x-www-form-urlencoded, content length:31
+2022-03-04 17:18:14,682 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->User-Agent, value->[PostmanRuntime/7.29.0]
+2022-03-04 17:18:14,682 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Accept, value->[*/*]
+2022-03-04 17:18:14,682 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Postman-Token, value->[f757b172-8fb7-48ba-9176-23db669925c4]
+2022-03-04 17:18:14,683 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Host, value->[localhost:8080]
+2022-03-04 17:18:14,683 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Accept-Encoding, value->[gzip, deflate, br]
+2022-03-04 17:18:14,683 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Connection, value->[keep-alive]
+2022-03-04 17:18:14,683 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Content-Type, value->[application/x-www-form-urlencoded]
+2022-03-04 17:18:14,683 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->content-length, value->[31]
+2022-03-04 17:18:14,683 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> body:username=oprsys&password=OprSys
+2022-03-04 17:18:14,683 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> headers: key->transfer-encoding, value->[chunked]
+2022-03-04 17:18:14,683 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> contentType:null, content length:-1, original path:/auth/login, cost:3 ms
+2022-03-04 17:18:16,030 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> body:{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvcHJzeXMiLCJwcml2aWxlZ2VzIjpbIi9zYXZpbmdzL2EvIiwiL3NhdmluZ3MvYi8iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDg0L2F1dGgvbG9naW4iLCJleHAiOjE2NDY0MDM0OTZ9.Opi1WlGEvLsKzlRqszE2Rr0F6jM5C-t6m-jZpHQZ8DI","refresh_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvcHJzeXMiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODQvYXV0aC9sb2dpbiIsImV4cCI6MTY0NjQ0NDg5Nn0.OL6R66_BE6cPNrpGU8RoVsAaQK4snFV2chCxM40Aw4k"}
+2022-03-04 17:18:30,715 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> schema:http, path:/savings/b/balance, method:GET, ip:/0:0:0:0:0:0:0:1:61378, host:localhost, contentType:null, content length:-1
+2022-03-04 17:18:30,716 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Authorization, value->[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvcHJzeXMiLCJwcml2aWxlZ2VzIjpbIi9zYXZpbmdzL2EvIiwiL3NhdmluZ3MvYi8iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDg0L2F1dGgvbG9naW4iLCJleHAiOjE2NDY0MDM0OTZ9.Opi1WlGEvLsKzlRqszE2Rr0F6jM5C-t6m-jZpHQZ8DI]
+2022-03-04 17:18:30,717 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->User-Agent, value->[PostmanRuntime/7.29.0]
+2022-03-04 17:18:30,717 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Accept, value->[*/*]
+2022-03-04 17:18:30,717 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Postman-Token, value->[7a7569ba-ff44-4691-b451-8e4545bedb49]
+2022-03-04 17:18:30,717 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Host, value->[localhost:8080]
+2022-03-04 17:18:30,718 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Accept-Encoding, value->[gzip, deflate, br]
+2022-03-04 17:18:30,718 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Connection, value->[keep-alive]
+2022-03-04 17:18:30,718 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> headers: key->transfer-encoding, value->[chunked]
+2022-03-04 17:18:30,718 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> contentType:null, content length:-1, original path:/savings/b/balance, cost:3 ms
+2022-03-04 17:18:33,083 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> body:{"amount":58.5}
+2022-03-04 17:18:40,414 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> schema:http, path:/savings/a/balance, method:GET, ip:/0:0:0:0:0:0:0:1:61378, host:localhost, contentType:null, content length:-1
+2022-03-04 17:18:40,415 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Authorization, value->[Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvcHJzeXMiLCJwcml2aWxlZ2VzIjpbIi9zYXZpbmdzL2EvIiwiL3NhdmluZ3MvYi8iXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDg0L2F1dGgvbG9naW4iLCJleHAiOjE2NDY0MDM0OTZ9.Opi1WlGEvLsKzlRqszE2Rr0F6jM5C-t6m-jZpHQZ8DI]
+2022-03-04 17:18:40,416 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->User-Agent, value->[PostmanRuntime/7.29.0]
+2022-03-04 17:18:40,416 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Accept, value->[*/*]
+2022-03-04 17:18:40,417 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Postman-Token, value->[e0abbd39-928c-4b6d-9a08-c1444ec5c0ed]
+2022-03-04 17:18:40,417 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Host, value->[localhost:8080]
+2022-03-04 17:18:40,417 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Accept-Encoding, value->[gzip, deflate, br]
+2022-03-04 17:18:40,417 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Request -> headers: key->Connection, value->[keep-alive]
+2022-03-04 17:18:40,418 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> headers: key->transfer-encoding, value->[chunked]
+2022-03-04 17:18:40,418 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> contentType:null, content length:-1, original path:/savings/a/balance, cost:4 ms
+2022-03-04 17:18:41,370 INFO  [reactor-http-nio-5] VerifyGatewayFilter: Response -> body:{"amount":4.5}
+2022-03-04 17:25:10,903 INFO  [main] GatewayApplication: Starting GatewayApplication using Java 1.8.0_261 on DESKTOP-B5LVVSH with PID 1472 (C:\Users\Kamyar\Documents\projects\kadmos\gateway\target\classes started by Kamyar in C:\Users\Kamyar\Documents\projects\kadmos)
+2022-03-04 17:25:10,907 DEBUG [main] GatewayApplication: Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-04 17:25:10,909 INFO  [main] GatewayApplication: No active profile set, falling back to 1 default profile: "default"
+2022-03-04 17:25:13,111 INFO  [main] GenericScope: BeanFactory id=63d91bba-a000-3694-b314-1eb49a60297e
+2022-03-04 17:25:13,287 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:25:13,290 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:25:13,293 INFO  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-04 17:25:15,624 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:25:16,926 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [After]
+2022-03-04 17:25:16,927 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Before]
+2022-03-04 17:25:16,928 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Between]
+2022-03-04 17:25:16,929 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Cookie]
+2022-03-04 17:25:16,929 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Header]
+2022-03-04 17:25:16,929 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Host]
+2022-03-04 17:25:16,930 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Method]
+2022-03-04 17:25:16,930 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Path]
+2022-03-04 17:25:16,931 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Query]
+2022-03-04 17:25:16,931 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [ReadBody]
+2022-03-04 17:25:16,931 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [RemoteAddr]
+2022-03-04 17:25:16,932 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2022-03-04 17:25:16,933 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [Weight]
+2022-03-04 17:25:16,933 INFO  [main] RouteDefinitionRouteLocator: Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-03-04 17:25:19,385 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:25:21,416 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:25:21,728 INFO  [main] EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-03-04 17:25:24,445 INFO  [main] DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2022-03-04 17:25:24,673 WARN  [main] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-03-04 17:25:24,898 INFO  [main] InstanceInfoFactory: Setting initial instance status as: STARTING
+2022-03-04 17:25:25,036 INFO  [main] DiscoveryClient: Initializing Eureka in region us-east-1
+2022-03-04 17:25:25,080 INFO  [main] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2022-03-04 17:25:25,187 INFO  [main] DiscoveryClient: Disable delta property : false
+2022-03-04 17:25:25,197 INFO  [main] DiscoveryClient: Single vip registry refresh property : null
+2022-03-04 17:25:25,199 INFO  [main] DiscoveryClient: Force full registry fetch : false
+2022-03-04 17:25:25,200 INFO  [main] DiscoveryClient: Application is null : false
+2022-03-04 17:25:25,202 INFO  [main] DiscoveryClient: Registered Applications size is zero : true
+2022-03-04 17:25:25,203 INFO  [main] DiscoveryClient: Application version is -1: true
+2022-03-04 17:25:25,204 INFO  [main] DiscoveryClient: Getting all instance registry info from the eureka server
+2022-03-04 17:25:27,129 INFO  [main] DiscoveryClient: The response status is 200
+2022-03-04 17:25:27,133 INFO  [main] DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2022-03-04 17:25:27,139 INFO  [main] InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-03-04 17:25:27,152 INFO  [main] DiscoveryClient: Discovery Client initialized at timestamp 1646402127148 with initial instances count: 0
+2022-03-04 17:25:27,155 INFO  [main] EurekaServiceRegistry: Registering application GATEWAY with eureka with status UP
+2022-03-04 17:25:27,156 INFO  [main] DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1646402127156, current=UP, previous=STARTING]
+2022-03-04 17:25:27,162 INFO  [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY: registering service...
+2022-03-04 17:25:27,380 INFO  [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient: DiscoveryClient_GATEWAY/localhost:GATEWAY - registration status: 204
+2022-03-04 17:25:28,120 INFO  [main] NettyWebServer: Netty started on port 8080
+2022-03-04 17:25:28,123 INFO  [main] EurekaAutoServiceRegistration: Updating port to 8080
+2022-03-04 17:25:29,845 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:25:31,623 INFO  [main] InetUtils: Cannot determine local hostname
+2022-03-04 17:25:31,657 INFO  [main] GatewayApplication: Started GatewayApplication in 23.282 seconds (JVM running for 25.583)
+2022-03-04 17:25:32,485 INFO  [registrationTask1] ApplicationRegistrator: Application registered itself as f824864f2336
+2022-03-04 17:25:57,138 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Disable delta property : false
+2022-03-04 17:25:57,144 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Single vip registry refresh property : null
+2022-03-04 17:25:57,145 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Force full registry fetch : false
+2022-03-04 17:25:57,145 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Application is null : false
+2022-03-04 17:25:57,146 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Registered Applications size is zero : true
+2022-03-04 17:25:57,147 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Application version is -1: false
+2022-03-04 17:25:57,147 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: Getting all instance registry info from the eureka server
+2022-03-04 17:25:57,196 INFO  [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient: The response status is 200
+2022-03-04 17:30:25,232 INFO  [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2022-03-04 17:35:25,252 INFO  [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2022-03-04 17:37:23,938 WARN  [registrationTask1] ApplicationRegistrator: Failed to register application as Application(name=GATEWAY, managementUrl=http://192.168.1.7:8080/actuator, healthUrl=http://192.168.1.7:8080/actuator/health, serviceUrl=http://192.168.1.7:8080/) at spring-boot-admin ([http://localhost:8085/instances]): Connection refused: no further information: localhost/127.0.0.1:8085; nested exception is io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:8085. Further attempts are logged on DEBUG level

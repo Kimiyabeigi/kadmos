@@ -1,0 +1,40 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8083/eureka
+
+spring:
+  application:
+    name: GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: uaa
+          uri: lb://UAA
+          predicates:
+            - Path=/auth/**
+        - id: savingsa
+          uri: lb://SAVINGS-A
+          predicates:
+            - Path=/savings/a/**
+          metadata:
+            response-timeout: 5000
+        - id: savingsb
+          uri: lb://SAVINGS-B
+          predicates:
+            - Path=/savings/b/**
+          metadata:
+            response-timeout: 5000
+  boot:
+    admin:
+      client:
+        url: http://localhost:8085
+management:
+  endpoint:
+    health:
+      show-details: always
+
+
+
